@@ -1,4 +1,4 @@
-/*----------------------ROOT---------------------*/
+/*--------------------ROOT--------------------*/
 :root{
     --main-text-blue-color:  #347cdb;
     --main-text-black-color: #212121;
@@ -10,9 +10,7 @@
     
 }
 
-
-
-/*----------------------HEADER-------------------*/
+/*--------------------HEADER--------------------*/
 
 
 /*----------------------------------*/
@@ -23,13 +21,13 @@
     color: var(--main-text-blue-color);
 }
 
-.header-link-active, .header-link-active:focus{
+.header-link-active:hover, .header-link-active:focus{
     font-family: inherit;
     font-weight: 600
     font-size: 12px;
     line-height: 1.33;
     letter-spacing: 0.1em;
-    color: var(--main-text-blue-color);
+    color: var(--main-text-black-color);
   }
 
 
@@ -40,6 +38,16 @@
     list-style: none;
     text-decoration: none; /* Отменяем подчеркивание у ссылки */
 }
+
+.header-link:hover, .header-link:focus{
+    font-family: inherit;
+    font-weight: 600
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+    color: var(--main-text-blue-color);
+  }
+/***/
 
 .header-contact-link-mail {
     text-decoration: none;
@@ -118,6 +126,16 @@ ul {
     color: var(--main-text-blue-color);
 }
 
+.hero-title:hover, .hero-title:focus{
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin: 0;
+    color: var(--main-text-gray-color);
+}
+
 
 /*services*/
 
@@ -127,6 +145,14 @@ ul {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--main-text-black-color);
+    margin: 0;
+}
+.services-title:focus, .services-title:hover{
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--main-text-blue-color);
     margin: 0;
 }
 
@@ -149,12 +175,27 @@ ul {
     margin: 0;
 }
 
+.what-we-do-title:hover, .what-we-do-title:focus{
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 0.03em;
+    color: var(--main-text-blue-color);
+    margin: 0;
+}
 /*our-team*/
 
 .our-team-title {
     font-weight: bold;
     font-size: 36px;
-    color: #212121;
+    color:  var(--main-text-black-color);
+    margin: 0;
+}
+
+.our-team-title:focus, .our-team-title:hover{
+    font-weight: bold;
+    font-size: 36px;
+    color: var(--main-text-blue-color);
     margin: 0;
 }
 
@@ -163,6 +204,14 @@ ul {
     font-size: 16px;
     color: var(--main-text-black-color);
     margin: 0;
+}
+
+.our-team-text-h3:hover, .our-team-text-h3:focus{
+        font-weight: 500;
+        font-size: 16px;
+        color: var(--main-text-blue-color);
+        margin: 0;
+    
 }
 
 
