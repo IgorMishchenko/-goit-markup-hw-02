@@ -1,4 +1,4 @@
-/*----------------------ROOT---------------------*/
+/*--------------------ROOT--------------------*/
 :root{
     --main-text-blue-color:  #347cdb;
     --main-text-black-color: #212121;
@@ -10,21 +10,50 @@
     
 }
 
-/*--->Header<---*/
+/*Disable list for "ul"*/
+ul {
+    list-style: none;
+}
+/*--------------------HEADER--------------------*/
 
+
+/*----------------------------------*/
 .header-link-active {
-    color: #347cdb;
+    font-family: Roboto;
     margin: 0; /* Отменяем отступы между ссылками */
     list-style: none; /* Отменяем List ссылками */
     text-decoration: none; /* Отменяем подчеркивание у ссылки */
+    color: var(--main-text-blue-color);
 }
 
+.header-link-active:hover, .header-link-active:focus{
+    font-family: Roboto;
+    font-weight: 600
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+    color: var(--main-text-black-color);
+  }
+
+
+
 .header-link {
-    color: #757575;
+    font-family: Roboto;
+    color: var(--main-text-gray-color);
     margin: 0;
     list-style: none;
     text-decoration: none; /* Отменяем подчеркивание у ссылки */
 }
+
+.header-link:hover, .header-link:focus{
+    font-family: Roboto;
+    font-weight: 600
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+    color: var(--main-text-blue-color);
+  }
+/***/
 
 .header-contact-link-mail {
     text-decoration: none;
@@ -35,7 +64,7 @@
     line-height: 16px;
     letter-spacing: 0.02em;
 
-    color: #757575;
+    color: var(--main-text-gray-color);
 }
 
 .header-contact-link-mail:hover {
@@ -46,7 +75,7 @@
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
-    color: #2196F3;
+    color: var(--main-text-blue-color);
 }
 .header-contact-link-tel {
     font-family: Roboto;
@@ -56,14 +85,13 @@
     line-height: 16px;
     letter-spacing: 0.02em;
     text-decoration: none;
-    color: #757575;
+    color: var(--main-text-gray-color);
 }
 
 /*--->Body<---*/
 body {
-    font-family: "Roboto", "Raleway";
-    font-family: "Raleway", "Roboto";
-}
+    font-family: "Roboto", "sans-serif";
+    }
 
 /*Disable list for "ul"*/
 ul {
@@ -71,21 +99,21 @@ ul {
 }
 
 /*Button.*/
-.button{
-    font-family: inherit;
-    font-weight: 600
+.button-projects{
+    font-family: Roboto;
+    font-weight: 600;
     font-size: 12px;
-    line-height: 1.33;
+    line-height: 1.62;
     letter-spacing: 0.1em;
     color: var(--main-text-white-color);
     background: var(--master-button-color);
 }
 
-.button:hover, .button:focus{
-    font-family: inherit;
-    font-weight: 600
+.button-projects:hover, .button-projects:focus{
+    font-family: Roboto;
+    font-weight: 600;
     font-size: 12px;
-    line-height: 1.33;
+    line-height: 1.62;
     letter-spacing: 0.1em;
     color: var(--main-text-white-color);
     background: var(--slave-button-color)
@@ -127,48 +155,41 @@ ul {
 
 .footer{
     position: center;
-    background-color:#212121;
+    background-color: var(--main-text-black-color);
 }
 
 .footer-logo{x
     position: absolute;
-width: 145px;
-height: 31px;
-left: 215px;
-top: 2157px;
+    width: 145px;
+    height: 31px;
+    left: 215px;
+    top: 2157px;
 
-font-family: Raleway;
-font-style: normal;
-font-weight: bold;
-font-size: 26px;
-line-height: 31px;
-/* identical to box height */
-
-letter-spacing: 0.03em;
-
-color: #2196F3;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    letter-spacing: 0.03em;
+    color: #2196F3;
 }
 
 .footer-text-main{
-    font-family: Roboto;
+    font-family: Raleway;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
-    line-height: 24px;
     letter-spacing: 0.03em;
-    color: #ffffff;
+    color: var(--main-text-white-color);
     text-decoration: none;
     }
 
 .footer-text{
-font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 14px;
-line-height: 24px;
-letter-spacing: 0.03em;
-color: rgba(255, 255, 255, 0.6);
-text-decoration: none;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    color: var(--main-text-gray-color);
+    text-decoration: none;
 }
-
 
