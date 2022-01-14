@@ -1,14 +1,41 @@
-/*--->Header<---*/
+/*----------------------ROOT---------------------*/
+:root{
+    --main-text-blue-color:  #347cdb;
+    --main-text-black-color: #212121;
+    --main-text-gray-color:  #757575;
+    --main-text-white-color:  #ffffff;
+   
+    --master-button-color: #347cdb;
+    --slave-button-color: #757575;
+    
+}
 
+
+
+/*----------------------HEADER-------------------*/
+
+
+/*----------------------------------*/
 .header-link-active {
-    color: #347cdb;
     margin: 0; /* Отменяем отступы между ссылками */
     list-style: none; /* Отменяем List ссылками */
     text-decoration: none; /* Отменяем подчеркивание у ссылки */
+    color: var(--main-text-blue-color);
 }
 
+.header-link-active, .header-link-active:focus{
+    font-family: inherit;
+    font-weight: 600
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+    color: var(--main-text-blue-color);
+  }
+
+
+
 .header-link {
-    color: #757575;
+    color: var(--main-text-gray-color);
     margin: 0;
     list-style: none;
     text-decoration: none; /* Отменяем подчеркивание у ссылки */
@@ -23,7 +50,7 @@
     line-height: 16px;
     letter-spacing: 0.02em;
 
-    color: #757575;
+    color: var(--main-text-gray-color);
 }
 
 .header-contact-link-mail:hover {
@@ -34,7 +61,7 @@
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
-    color: #2196F3;
+    color: var(--main-text-blue-color);
 }
 .header-contact-link-tel {
     font-family: Roboto;
@@ -44,7 +71,7 @@
     line-height: 16px;
     letter-spacing: 0.02em;
     text-decoration: none;
-    color: #757575;
+    color: var(--main-text-gray-color);
 }
 
 /*--->Body<---*/
@@ -58,16 +85,27 @@ ul {
     list-style: none;
 }
 
-/*Universal selector
-*{
-    color: #212121;
-}*/
+/*Button.*/
+.button{
+    font-family: inherit;
+    font-weight: 600
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+    color: var(--main-text-white-color);
+    background: var(--master-button-color);
+}
 
-/*Margin:0 for selector "p"
-p {
-    margin: 0;*/
+.button:hover, .button:focus{
+    font-family: inherit;
+    font-weight: 600
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+    color: var(--main-text-white-color);
+    background: var(--slave-button-color)
+}
 
-    
 
 /*Hero*/
 .hero-title {
@@ -77,10 +115,8 @@ p {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     margin: 0;
-    color: #347cdb;
+    color: var(--main-text-blue-color);
 }
-
-
 
 
 /*services*/
@@ -90,7 +126,7 @@ p {
     line-height: 16px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #212121;
+    color: var(--main-text-black-color);
     margin: 0;
 }
 
@@ -98,7 +134,7 @@ p {
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--main-text-gray-color);
     margin: 0;
     }
 
@@ -109,7 +145,7 @@ p {
     font-size: 36px;
     line-height: 42px;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--main-text-black-color);
     margin: 0;
 }
 
@@ -125,7 +161,7 @@ p {
 .our-team-text-h3{
     font-weight: 500;
     font-size: 16px;
-    color: #212121;
+    color: var(--main-text-black-color);
     margin: 0;
 }
 
@@ -133,7 +169,7 @@ p {
 .our-team-text-p{
     font-weight: 500;
     font-size: 16px;
-    color: #757575;
+    color: var(--main-text-gray-color);
     margin: 0;
  }
 
@@ -142,7 +178,7 @@ p {
 
 .footer{
     position: center;
-    background-color:#212121;
+    background-color: var(--main-text-black-color);
 }
 
 .footer-logo{x
@@ -157,10 +193,7 @@ font-style: normal;
 font-weight: bold;
 font-size: 26px;
 line-height: 31px;
-/* identical to box height */
-
 letter-spacing: 0.03em;
-
 color: #2196F3;
 }
 
@@ -171,7 +204,7 @@ color: #2196F3;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
-    color: #ffffff;
+    color: var(--main-text-white-color);
     text-decoration: none;
     }
 
@@ -182,7 +215,7 @@ font-weight: normal;
 font-size: 14px;
 line-height: 24px;
 letter-spacing: 0.03em;
-color: rgba(255, 255, 255, 0.6);
+color: var(--main-text-gray-color);
 text-decoration: none;
 }
 

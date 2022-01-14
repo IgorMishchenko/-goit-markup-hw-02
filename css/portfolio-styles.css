@@ -1,3 +1,15 @@
+/*----------------------ROOT---------------------*/
+:root{
+    --main-text-blue-color:  #347cdb;
+    --main-text-black-color: #212121;
+    --main-text-gray-color:  #757575;
+    --main-text-white-color:  #ffffff;
+   
+    --master-button-color: #347cdb;
+    --slave-button-color: #757575;
+    
+}
+
 /*--->Header<---*/
 
 .header-link-active {
@@ -56,6 +68,27 @@ body {
 /*Disable list for "ul"*/
 ul {
     list-style: none;
+}
+
+/*Button.*/
+.button{
+    font-family: inherit;
+    font-weight: 600
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+    color: var(--main-text-white-color);
+    background: var(--master-button-color);
+}
+
+.button:hover, .button:focus{
+    font-family: inherit;
+    font-weight: 600
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+    color: var(--main-text-white-color);
+    background: var(--slave-button-color)
 }
 
 /*Project*/
