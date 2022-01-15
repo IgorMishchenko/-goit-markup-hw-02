@@ -11,35 +11,34 @@
     <link rel="stylesheet" href="./css/portfolio-styles.css"/>
 </head>
 <body>
-   <header>
-    <a href="./index.html"><img src="./images/header_logo_webstudio.jpg" alt="Лого в заголовке WebStudio"></a>       
+    <header>
+        <a href="./index.html"><img src="./images/header_logo_webstudio.jpg" class="header-logo" alt="Лого в заголовке WebStudio"></a>       
+            
+            <ul class="header-list">
+                <li class="header-item"><a href="./studio.html" class="header-link">Студия</a></li>
+                <li class="header-item"><a href="./portfolio.html" class="header-link-active">Портфолио</a></li>
+                <li class="header-item"><a href="./contact.html" class="header-link">Контакты</a></li>
+            </ul>
+            <ul class="header-contact-list">
+                <li class="header-contact-item"><a href="tel:+380978725051" class="header-contact-link-tel">0978725051</a></li>
+                <li class="header-contact-item"><a href="mailto:info@example.com" class="header-contact-link-mail">info@example.com</a></li>
+            </ul>
         
-        <ul class="header-list">
-            <li class="header-item"><a href="./studio.html" class="header-link">Студия</a></li>
-            <li class="header-item"><a href="./portfolio.html" class="header-link-active">Портфолио</a></li>
-            <li class="header-item"><a href="./contact.html" class="header-link">Контакты</a></li>
-        </ul>
-
-        <ul class="header-contact-list">
-            <li class="header-contact-item"><a href="tel:+380978725051" class="header-contact-link-tel">0978725051</a></li>
-            <li class="header-contact-item"><a href="mailto:info@example.com" class="header-contact-link-mail">info@example.com</a></li>
-        </ul>
-    
-    </header> 
+        </header>  
 <main> 
 
 
     <section  class="projects">
               
-     
-            <button type="button" class="button-projects">Все</button>
-            <button type="button" class="button-projects">Веб-сайт</button>
-            <button type="button" class="button-projects">Приложения</button>
-            <button type="button" class="button-projects">Дизайн</button>
-            <button type="button" class="button-projects">Маркетинг</button>
-        
-      
-            <ul>
+     <ul>
+        <li><button type="button" class="button-main">Все</button></li>
+        <li><button type="button" class="button">Веб-сайт</button></li>
+        <li><button type="button" class="button">Приложения</button></li>
+        <li><button type="button" class="button">Дизайн</button></li>
+        <li><button type="button" class="button">Маркетинг</button></li>
+    </ul>
+
+     <ul>
                 <li class="projects-item"><img src="./images/portfolio/project-1.jpg" alt="Наши проекты" width="370" height="290"/> <h3  class="projects-text-h3">Технокряк</h3><p class="projects-text-p">Веб-сайт</p> </li>
                 <li class="projects-item"><img src="./images/portfolio/project-2.jpg" alt="Наши проекты" width="370" height="290"/> <h3  class="projects-text-h3">Постер New Orlean vs Golden Star</h3><p class="projects-text-p">Дизайн</p>  </li>
                 <li class="projects-item"><img src="./images/portfolio/project-3.jpg" alt="Наши проекты" width="370" height="290"/> <h3  class="projects-text-h3">Ресторан Seafood</h3><p class="projects-text-p">Приложение</p>  </li>
@@ -59,10 +58,10 @@
     
     <address > 
         <ul>
-            <li><a href="https://goo.gl/maps/wMssc7S66yAjxJLt8" target="_blank" rel="noopen nofollow noreferrer" class="footer-text-main">г. Киев, пр-т Леси Украинки, 26</a></li>
-            <li><a href="mailto:info@example.com" class="footer-text">info@example.com</a></li>
-            <li><a href="tel:+380978725051" class="footer-text"> 097 872 50 51</a></li>
-        </ul>  
+            <li><a href="https://goo.gl/maps/wMssc7S66yAjxJLt8" target="_blank" rel="noopen nofollow noreferrer" class="footer-text-address">г. Киев, пр-т Леси Украинки, 26</a></li>
+            <li><a href="mailto:info@example.com" class="footer-text-mail">info@example.com</a></li>
+            <li><a href="tel:+380978725051" class="footer-text-tel"> 097 872 50 51</a></li>
+        </ul> 
     </address>
   </footer>
 
